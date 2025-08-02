@@ -1,3 +1,31 @@
+// Typing effect for the main title (dynamic and human-like)
+document.addEventListener('DOMContentLoaded', function() {
+    const mainTitle = document.querySelector('.main-title');
+    if (mainTitle) {
+        const titleText = mainTitle.textContent;
+        mainTitle.innerHTML = '<span class="typing-text"></span><span class="typing-cursor">|</span>';
+        const typingText = mainTitle.querySelector('.typing-text');
+        const typingCursor = mainTitle.querySelector('.typing-cursor');
+        
+        let i = 0;
+        const typeWriter = () => {
+            if (i < titleText.length) {
+                typingText.textContent += titleText.charAt(i);
+                i++;
+                // Random delay between 50ms and 150ms for human-like effect
+                const randomDelay = Math.random() * 100 + 50;
+                setTimeout(typeWriter, randomDelay);
+            } else {
+                // Remove cursor when typing is complete
+                typingCursor.style.display = 'none';
+            }
+        };
+        
+        // Start typing effect immediately when DOM is ready
+        typeWriter();
+    }
+});
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu functionality
@@ -58,16 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact button functionality
-    const contactBtn = document.querySelector('.contact-btn');
+    // Sign in button functionality
     const signInBtn = document.querySelector('.sign-in-btn');
-    
-    if (contactBtn) {
-        contactBtn.addEventListener('click', function() {
-            // You can replace this with your actual contact form or email link
-            window.location.href = 'mailto:your.email@example.com?subject=Portfolio Inquiry';
-        });
-    }
     
     if (signInBtn) {
         signInBtn.addEventListener('click', function() {
@@ -231,24 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Typing effect for the main title (optional)
-    const mainTitle = document.querySelector('.main-title');
-    if (mainTitle) {
-        const titleText = mainTitle.textContent;
-        mainTitle.textContent = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < titleText.length) {
-                mainTitle.textContent += titleText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        };
-        
-        // Start typing effect after a delay
-        setTimeout(typeWriter, 1000);
-    }
+
 
     // Parallax effect for profile card
     const profileCard = document.querySelector('.profile-card');
