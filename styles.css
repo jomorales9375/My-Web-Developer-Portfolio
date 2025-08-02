@@ -79,6 +79,10 @@ body {
     color: #00ff88;
 }
 
+.mobile-menu-toggle {
+    display: none;
+}
+
 .sign-in-btn {
     background-color: #ffffff;
     color: #000000;
@@ -1115,7 +1119,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1136,6 +1140,65 @@ body {
     
     .nav-links {
         display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .mobile-menu .nav-link {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .mobile-menu .nav-link:hover,
+    .mobile-menu .nav-link.active {
+        color: #00ff88;
+    }
+    
+    .mobile-menu-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 5px;
     }
     
     .hero-heading {
