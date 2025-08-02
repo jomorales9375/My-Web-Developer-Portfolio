@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jonathan Morales</title>
+    <link rel="stylesheet" href="styles.css?v=1754114684589">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <span class="logo-text">dev@portfolio</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <button class="sign-in-btn">Get Quote</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-header">
+                <h1 class="portfolio-title">My Portfolio</h1>
+                <p class="portfolio-subtitle">Showcasing my latest projects and creative work</p>
+            </div>
+            
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Tweet-Feed-App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="mockup-tweet-feed.html" class="project-link mockup-btn" title="View Mockup"><i class="fas fa-image"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tweet Feed App</h3>
+                        <p>A full-stack social media platform featuring user authentication, real-time posts, and complete CRUD operations. Built with modern JavaScript and SQL database for scalable user management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b63bbce4?w=600&h=400&fit=crop" alt="Team Apex Legends Backend">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="mockup-car-marketplace.html" class="project-link mockup-btn" title="View Mockup"><i class="fas fa-image"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Online Car Marketplace</h3>
+                        <p>A comprehensive car marketplace platform where users can buy and sell vehicles. Built with TypeScript and modern web technologies, featuring user authentication, vehicle listings, search functionality, and secure transaction processing in a collaborative team environment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">API Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="obra-de-adulam">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://obradeadulam.com" class="project-link live-site" target="_blank" title="View Live Site"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Church Website</h3>
+                        <p>A comprehensive church website featuring event management, sermon archives, and community engagement tools. Designed with modern web technologies to connect congregations and enhance digital ministry outreach.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&h=400&fit=crop" alt="Pet-Shop">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="mockup-pet-shop.html" class="project-link mockup-btn" title="View Mockup"><i class="fas fa-image"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Pet Shop</h3>
+                        <p>A complete e-commerce platform for pet supplies featuring product catalog, shopping cart, and secure checkout. Built using MVC architecture with SQL database for robust inventory management and order processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MVC</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b63bbce4?w=600&h=400&fit=crop" alt="guessing-game-app">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="mockup-guessing-game.html" class="project-link mockup-btn" title="View Mockup"><i class="fas fa-image"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Guessing Game</h3>
+                        <p>An engaging browser-based game featuring dynamic user interaction, score tracking, and responsive design. Demonstrates strong JavaScript fundamentals and user experience design principles.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Game Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop" alt="first-github-project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="mockup-web-foundation.html" class="project-link mockup-btn" title="View Mockup"><i class="fas fa-image"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Development Foundation</h3>
+                        <p>A foundational web development project demonstrating core HTML, CSS, and JavaScript skills. Showcases clean code structure, semantic markup, and responsive design principles essential for modern web development.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together. Get in touch to discuss your next project.</p>
+                <a href="contact.html" class="cta-btn">
+                    <span>Start a Project</span>
+                    <div class="btn-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js?v=1754114684589"></script>
+</body>
+</html> 
